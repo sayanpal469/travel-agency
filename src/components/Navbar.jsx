@@ -4,11 +4,10 @@ import { useEffect, useState } from "react";
 
 const navigation = [
   { name: "About", href: "#about", current: false },
-  { name: "Rooms", href: "#", current: false },
-  { name: "Gallery", href: "#", current: false },
-  { name: "Activities", href: "#", current: false },
-  { name: "Contacts", href: "#", current: false },
-  { name: "Book Now", href: "#", current: true },
+  { name: "Gallery", href: "#gallery", current: false },
+  { name: "Tours", href: "#tour", current: false },
+  { name: "Review", href: "#", current: false },
+  { name: "Contact Us", href: "#", current: true },
 ];
 
 function classNames(...classes) {
@@ -16,7 +15,6 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -28,16 +26,20 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
-  
+
   return (
-    <Disclosure as="nav" className={`transition-colors lg:mt-5 sticky top-0 z-50 duration-300 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <Disclosure
+      as="nav"
+      className={`transition-colors lg:mt-5 sticky top-0 z-50 duration-300 ${
+        scrolled ? "bg-white" : "bg-transparent"
+      }`}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-20">
@@ -56,8 +58,21 @@ const Navbar = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <h1 className={`text-4xl ${scrolled ? 'text-black' : 'text-white'}`}>
-                    <a href="#">𝓣𝓸𝓾𝓻𝓑𝓾𝓭</a>
+                  <h1
+                    className={`text-4xl ${
+                      scrolled ? "text-black" : "text-white"
+                    }`}
+                  >
+                    <a
+                      href="#"
+                      className={
+                        scrolled
+                          ? "bg-gradient-to-r from-green-600 via-white to-orange-500 text-black font-semibold px-4 py-2 rounded"
+                          : "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-green-600 via-white to-orange-500"
+                      }
+                    >
+                      IndiaXplorers
+                    </a>
                   </h1>
                 </div>
               </div>
@@ -72,7 +87,9 @@ const Navbar = () => {
                         className={classNames(
                           item.current
                             ? "bg-orange-500 text-white px-3 py-2 rounded-md"
-                            : `${scrolled ? 'text-black' : 'text-white'} px-3 py-3 text-sm font-medium`
+                            : `${
+                                scrolled ? "text-black" : "text-white"
+                              } px-3 py-3 text-sm font-medium`
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

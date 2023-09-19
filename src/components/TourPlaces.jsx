@@ -76,10 +76,10 @@ const TourPlaces = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="tour">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h1 className="text-5xl tracking-tight text-gray-600 text-center my-14">
-          Tour Places
+          Upcoming Tour
         </h1>
         <Swiper
           freeMode={true}
