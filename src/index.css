@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Helvetica Neue", sans-serif;
+  /* background-color: aliceblue; */
 }
+

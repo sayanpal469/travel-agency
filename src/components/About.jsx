@@ -1,20 +1,40 @@
-import Image from '../assets/Screenshot_1.png'
+import Image from "../assets/about.jpg";
 
 const About = () => {
   return (
-    <section className="text-gray-600 body-font max-w-7xl mx-auto" id='about'>
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <section className="text-gray-600 body-font max-w-7xl mx-auto" id="about">
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:gap-24 gap-10">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt="hero"
+            src={Image}
+          />
+        </div>
+
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-2">
           <h3 className="title-font text-sm tracking-widest font-semibold text-gray-400">
-          ABOUT US
+            ABOUT US
           </h3>
-          <h1 className="sm:text-3xl lg:text-5xl md:text-3xl font-bold text-black my-3">
-          Makes your self at home and enjoy a unique experience
+          <h1 className="text-3xl lg:text-7xl md:text-3xl  text-black">
+            Lets Experience Travel With Us
           </h1>
 
-          <h2 className="text-lg mb-2 text-gray-500">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas <br /> erat dignissim.</h2>
-          
-          <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores tenetur repellat laudantium eos non quod sint quidem velit eius fugiat possimus, molestias suscipit praesentium obcaecati dicta et ipsa, qui reprehenderit illo amet. Deleniti nesciunt repudiandae qui illo quia eum libero totam culpa aliquid. Alias ex perferendis voluptatibus quis. Maxime.</p>
+          <p className="leading-loose font-thin ml-2">
+            {`Welcome to [Your Travel Agency Name], your gateway to unforgettable
+            travel experiences around the world. At [Your Travel Agency Name],
+            we believe that travel isn't just about visiting new destinations;
+            it's about creating lasting memories, discovering new cultures, and
+            making your dreams a reality. Whether you're seeking a relaxing
+            beach getaway, an adventurous trek through the mountains, a cultural
+            exploration of historic cities, or anything in between, our team of
+            experienced travel experts is here to curate the perfect itinerary
+            for you. We specialize in crafting personalized journeys that cater
+            to your unique preferences, ensuring every trip is a one-of-a-kind
+            adventure. Join us and embark on a voyage of discovery, where every
+            destination becomes a story, and every moment is a cherished memory.
+            Your dream journey begins here`}
+          </p>
           {/* <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Button
@@ -23,13 +43,6 @@ const About = () => {
               Button
             </button>
           </div> */}
-        </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src={Image}
-          />
         </div>
       </div>
     </section>
