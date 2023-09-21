@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 const navigation = [
   { name: "About", href: "#about", current: false },
@@ -33,6 +34,8 @@ const Navbar = () => {
     };
   }, []);
 
+  // console.log(logo);
+
   return (
     <Disclosure
       as="nav"
@@ -57,7 +60,12 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex flex-shrink-0 items-center ">
+                  <img
+                    src={logo}
+                    alt="Description of the image"
+                    className="h-11 mr-2 "
+                  />
                   <h1
                     className={`text-4xl ${
                       scrolled ? "text-black" : "text-white"
@@ -67,8 +75,8 @@ const Navbar = () => {
                       href="#"
                       className={
                         scrolled
-                          ? "bg-gradient-to-r from-green-600 via-white to-orange-500 text-black font-semibold px-4 py-2 rounded"
-                          : "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-green-600 via-white to-orange-500"
+                          ? "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] to-[#0ed715b0] "
+                          : "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#E64569] via-white to-green-500"
                       }
                     >
                       IndiaXplorers

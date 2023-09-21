@@ -1,14 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
 .gallery_box {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   overflow: hidden;
-  max-width: 90vw;
-  margin-left: -120px;
+  max-width: 85vw;
+  margin-left: -190px;
   /* border: 1px solid red; */
   /* margin: auto; */
 }

@@ -2,8 +2,8 @@
 import "../styles/About.css";
 const About = () => {
   return (
-    <section className="text-gray-600 body-font max-w-7xl mx-auto" id="about">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:gap-24 gap-10">
+    <section className="text-gray-600 body-font max-w-7xl mx-auto border-2 border-red-500" id="about">
+      <div className="container mx-auto flex px-5 border-2 py-24 md:flex-row flex-col items-center lg:gap-24 gap-10">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div className="gallery">
             <img
@@ -28,7 +28,7 @@ const About = () => {
           </h3>
           <h1 className="text-3xl lg:text-7xl md:text-3xl  text-black">
             Lets Experience{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-yellow-500 to-orange-500">
+            <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] to-[#0ed715b0]">
               Travel{" "}
             </span>{" "}
             With Us
@@ -36,12 +36,12 @@ const About = () => {
 
           <p className="leading-loose font-thin ml-2 text-justify">
             Welcome to{" "}
-            <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-green-600 via-yellow-500 to-orange-500">
+            <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] to-[#0ed715b0]">
               IndaXplorers
             </span>
             , your gateway to unforgettable travel experiences around the India.
             At{" "}
-            <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-green-600 via-yellow-500 to-orange-500">
+            <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] to-[#0ed715b0]">
               IndaXplorers
             </span>
             , we believe that travel isn&apos;t just about visiting new

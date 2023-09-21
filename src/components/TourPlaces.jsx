@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "../styles/swiper.css";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Autoplay } from "swiper/modules";
 
 const places = [
   {
@@ -78,47 +78,47 @@ const TourPlaces = () => {
   return (
     <div className="bg-white" id="tour">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h1 className="text-5xl tracking-tight text-gray-600 text-center my-14">
+        <h1 className="text-5xl tracking-tight  text-gray-600 text-center my-14">
           Upcoming Tour
         </h1>
-        <Swiper
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[FreeMode, Pagination]}
-          className="mySwiper"
-          breakpoints={breakpoints}
-        >
-          {places.map((place) => (
-            <SwiperSlide
-              key={place.id}
-              className="flex flex-col bg-gray-100 rounded-md pb-8"
-            >
-              <div>
-                <img
-                  src={place.imageSrc}
-                  alt={place.imageAlt}
-                />
-              </div>
-              <div>
-                <div className="mt-4">
-                  <div>
-                    <h3 className="text-lg text-gray-700 capitalize">
-                      {place.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-500 my-2 capitalize">
-                      {place.location}
+        <div className="border-2 border-red-500">
+          <Swiper
+            freeMode={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[FreeMode, Autoplay]}
+            className="mySwiper"
+            breakpoints={breakpoints}
+          >
+            {places.map((place) => (
+              <SwiperSlide
+                key={place.id}
+                className="flex flex-col bg-gray-100 rounded-md pb-8"
+              >
+                <div>
+                  <img src={place.imageSrc} alt={place.imageAlt} />
+                </div>
+                <div>
+                  <div className="mt-4">
+                    <div>
+                      <h3 className="text-lg text-gray-700 capitalize">
+                        {place.name}
+                      </h3>
+                      <p className="mt-1 text-sm text-gray-500 my-2 capitalize">
+                        {place.location}
+                      </p>
+                    </div>
+                    <p className="text-sm font-medium text-gray-900">
+                      {place.price}
                     </p>
                   </div>
-                  <p className="text-sm font-medium text-gray-900">
-                    {place.price}
-                  </p>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
