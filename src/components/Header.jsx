@@ -24,7 +24,7 @@ const Header = () => {
           connect with us.
         </h1>
         <button className="mt-5 border-2 border-white p-2">
-          Explore Tours
+          <a href="#tour">Explore Tours</a>
         </button>
       </div>
     </div>
