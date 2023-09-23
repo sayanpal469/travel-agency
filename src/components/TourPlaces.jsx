@@ -95,9 +95,9 @@ const TourPlaces = () => {
             {places.map((place) => (
               <SwiperSlide
                 key={place.id}
-                className="flex flex-col bg-gray-100 rounded-md pb-8"
+                className="flex flex-col  bg-gray-100 rounded-md pb-8"
               >
-                <div>
+                <div className=" w-[100%] h-80">
                   <img src={place.imageSrc} alt={place.imageAlt} />
                 </div>
                 <div>
