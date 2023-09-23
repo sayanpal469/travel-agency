@@ -5,6 +5,7 @@ import Feature from "../components/Feature";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import Review from "../components/Review";
 import TourPlaces from "../components/TourPlaces";
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
             <About/>
             <Destinations/>
             <Feature/>
-            <TourPlaces/>
+            <TourPlaces />
+            <Review/>
             <Contact/>
             <Footer/>
         </div>

@@ -7,7 +7,7 @@ const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Gallery", href: "#gallery", current: false },
   { name: "Tours", href: "#tour", current: false },
-  { name: "Review", href: "#", current: false },
+  { name: "Review", href: "#review", current: false },
   { name: "Contact Us", href: "#contact", current: true },
 ];
 
@@ -49,7 +49,7 @@ const Navbar = () => {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -59,24 +59,24 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center ">
+              <div className="flex  flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
                   <img
                     src={logo}
                     alt="Description of the image"
-                    className="h-11 mr-2 "
+                    className="h-8 mr-2 lg:h-11 "
                   />
                   <h1
-                    className={`text-4xl ${
+                    className={`text-2xl ${
                       scrolled ? "text-black" : "text-white"
-                    }`}
+                    }  lg:text-4xl`}
                   >
                     <a
                       href="#"
                       className={
                         scrolled
-                          ? "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] to-[#0ed715b0] "
-                          : "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#E64569] via-white to-green-500"
+                          ? "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#FF69B4] via-[#E64569] to-[#0ed715b0] "
+                          : "text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#E64569] via-[#E64569] to-green-500"
                       }
                     >
                       IndiaXplorers
@@ -94,7 +94,7 @@ const Navbar = () => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-orange-500 text-white px-3 py-2 rounded-md"
+                            ? "bg-[#E64569] text-white px-3 py-2 rounded-md"
                             : `${
                                 scrolled ? "text-black" : "text-white"
                               } px-3 py-3 text-sm font-medium`
@@ -119,8 +119,8 @@ const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? " bg-[#E64569] text-black"
+                      : "text-black-300 hover:bg-pink-200 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
