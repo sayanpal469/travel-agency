@@ -7,21 +7,22 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Review from "../components/Review";
 import TourPlaces from "../components/TourPlaces";
-
+import ScrollToTop from "react-scroll-to-top";
 const Home = () => {
-    return (
-        <div>
-            <Navbar/>
-            <Header/>
-            <About/>
-            <Destinations/>
-            <Feature/>
-            <TourPlaces />
-            <Review/>
-            <Contact/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Header />
+      <About />
+      <Destinations />
+      <Feature />
+      <TourPlaces />
+      <Review />
+      <Contact />
+      <Footer />
+        <ScrollToTop smooth color="black" className="pl-1"/>
+    </div>
+  );
 };
 
 export default Home;

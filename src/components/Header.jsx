@@ -1,8 +1,8 @@
 import headerVideo from "../assets/video (720p).mp4";
-
+import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   return (
-    <div className="header h-screen ">
+    <div className="header h-screen">
       <div className="absolute inset-0 w-full h-full bg-opacity-50 bg-gray-800 z-10" />
       <video
         autoPlay
@@ -24,7 +24,15 @@ const Header = () => {
           connect with us.
         </h1>
         <button className="mt-5 border-2 border-white p-2">
-          <a href="#tour">Explore Tours</a>
+          <a href="#tour">
+            <ScrollLink
+              to={"tour"} // Remove the '#' symbol
+              smooth={true} // Enable smooth scrolling
+              duration={1500} // Set the scroll duration in milliseconds
+            >
+              Explore Tours
+            </ScrollLink>
+          </a>
         </button>
       </div>
     </div>

@@ -7,7 +7,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "../styles/swiper.css";
-
+import Slide from "react-reveal/Slide";
 // import required modules
 import { FreeMode, Autoplay } from "swiper/modules";
 
@@ -81,44 +81,46 @@ const TourPlaces = () => {
         <h1 className="text-5xl tracking-tight  text-gray-600 text-center my-14">
           Upcoming Tour
         </h1>
-        <div>
-          <Swiper
-            freeMode={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[FreeMode, Autoplay]}
-            className="mySwiper"
-            breakpoints={breakpoints}
-          >
-            {places.map((place) => (
-              <SwiperSlide
-                key={place.id}
-                className="flex flex-col  bg-gray-100 rounded-md pb-8"
-              >
-                <div className=" w-[100%] h-80">
-                  <img src={place.imageSrc} alt={place.imageAlt} />
-                </div>
-                <div>
-                  <div className="mt-4">
-                    <div>
-                      <h3 className="text-lg text-gray-700 capitalize">
-                        {place.name}
-                      </h3>
-                      <p className="mt-1 text-sm text-gray-500 my-2 capitalize">
-                        {place.location}
+        <Slide>
+          <div>
+            <Swiper
+              freeMode={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[FreeMode, Autoplay]}
+              className="mySwiper"
+              breakpoints={breakpoints}
+            >
+              {places.map((place) => (
+                <SwiperSlide
+                  key={place.id}
+                  className="flex flex-col  bg-gray-100 rounded-md pb-8"
+                >
+                  <div className=" w-[100%] h-80">
+                    <img src={place.imageSrc} alt={place.imageAlt} />
+                  </div>
+                  <div>
+                    <div className="mt-4">
+                      <div>
+                        <h3 className="text-lg text-gray-700 capitalize">
+                          {place.name}
+                        </h3>
+                        <p className="mt-1 text-sm text-gray-500 my-2 capitalize">
+                          {place.location}
+                        </p>
+                      </div>
+                      <p className="text-sm font-medium text-gray-900">
+                        {place.price}
                       </p>
                     </div>
-                    <p className="text-sm font-medium text-gray-900">
-                      {place.price}
-                    </p>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </Slide>
       </div>
     </div>
   );

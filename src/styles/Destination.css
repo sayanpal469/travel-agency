@@ -49,7 +49,7 @@
   .gallery__strip.one {
     width: 100%; /* Ensure each strip takes up full width */
     display: block;
-    animation: 15s move-it ease alternate infinite 2s;
+    animation: 30s move-it-2 ease alternate infinite 2s;
     transform: translateY(-2%);
   }
 
