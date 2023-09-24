@@ -15,8 +15,8 @@ const Footer = () => {
         </div>
 
         <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8 bg-slate-100">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div className="ml-0 lg:ml-8">
+          <div className="grid grid-cols-1  sm:grid-cols-2">
+            <div className="lg:ml-[5rem]">
               <p>
                 <span className="text-xs uppercase tracking-wide text-gray-500">
                   Call us
