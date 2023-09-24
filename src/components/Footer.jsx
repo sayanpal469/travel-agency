@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="grid grid-cols-1  sm:grid-cols-2">
             <div className="lg:ml-[5rem]">
               <p>
-                <span className="text-xs uppercase tracking-wide text-gray-500">
+                <span className="text-xs uppercase tracking-wide text-gray-500 font-semibold">
                   Call us
                 </span>
 
@@ -101,7 +101,7 @@ const Footer = () => {
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <p className="font-medium text-gray-500">Useful Links</p>
+                <p className="font-semibold text-gray-500 ">Useful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -113,7 +113,6 @@ const Footer = () => {
                         to={"gallery"} // Remove the '#' symbol
                         smooth={true} // Enable smooth scrolling
                         duration={500} // Set the scroll duration in milliseconds
-                        
                       >
                         Gallery
                       </ScrollLink>
@@ -129,7 +128,6 @@ const Footer = () => {
                         to={"tour"} // Remove the '#' symbol
                         smooth={true} // Enable smooth scrolling
                         duration={500} // Set the scroll duration in milliseconds
-                        
                       >
                         Tours
                       </ScrollLink>
@@ -145,7 +143,6 @@ const Footer = () => {
                         to={"review"} // Remove the '#' symbol
                         smooth={true} // Enable smooth scrolling
                         duration={500} // Set the scroll duration in milliseconds
-                        
                       >
                         Review
                       </ScrollLink>
@@ -155,7 +152,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Company</p>
+                <p className="font-semibold text-gray-900">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -167,7 +164,6 @@ const Footer = () => {
                         to={"about"} // Remove the '#' symbol
                         smooth={true} // Enable smooth scrolling
                         duration={500} // Set the scroll duration in milliseconds
-                        
                       >
                         About
                       </ScrollLink>
@@ -186,8 +182,11 @@ const Footer = () => {
                   IndiaXplorers
                 </h1>
               </div>
-              <p className="mt-8 text-xs text-gray-500 sm:mt-0">
+              <p className="mt-8 text-xs mr-20 text-gray-500 sm:mt-0">
                 &copy; 2023. IndiaXplorers. All rights reserved.
+              </p>
+              <p className="mt-8 text-xs mr-20 text-black sm:mt-0">
+                Thia site is designed & developed by Subho ( 8777468277 )
               </p>
             </div>
           </div>

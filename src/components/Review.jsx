@@ -1,5 +1,6 @@
 import "../styles/review.css";
-import RubberBand from "react-reveal/RubberBand";
+import Slide from "react-reveal/Slide";
+
 const Review = () => {
   return (
     <div>
@@ -9,9 +10,8 @@ const Review = () => {
             Beloved by Clients 💖
           </h1>
         </div>
-
-        <RubberBand>
-          <div className="innerdiv">
+        <div className="innerdiv">
+          <Slide left delay={800}>
             <div className="div1 eachdiv">
               <div className="userdetails">
                 <div className="imgbox">
@@ -42,30 +42,30 @@ const Review = () => {
                 </p>
               </div>
             </div>
-
-            <div className="div2 eachdiv">
-              <div className="userdetails">
-                <div className="imgbox">
-                  <img
-                    src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="detbox">
-                  <p className="name">Jonathan Walters</p>
-                </div>
+          </Slide>
+          <div className="div2 eachdiv">
+            <div className="userdetails">
+              <div className="imgbox">
+                <img
+                  src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                  alt=""
+                />
               </div>
-              <div className="review">
-                <h4>An Unforgettable Journey with IndiaXplorer</h4>
-                <p>
-                  “ My journey with IndiaXplorer in Sundarban was absolutely
-                  amazing. As a first-time traveler to the region, I was a mix
-                  of excitement and nerves, but the IndiaXplorer team ensured I
-                  had an unforgettable experience. ”
-                </p>
+              <div className="detbox">
+                <p className="name">Jonathan Walters</p>
               </div>
             </div>
-
+            <div className="review">
+              <h4>An Unforgettable Journey with IndiaXplorer</h4>
+              <p>
+                “ My journey with IndiaXplorer in Sundarban was absolutely
+                amazing. As a first-time traveler to the region, I was a mix of
+                excitement and nerves, but the IndiaXplorer team ensured I had
+                an unforgettable experience. ”
+              </p>
+            </div>
+          </div>
+          <Slide right delay={1000}>
             <div className="div3 eachdiv">
               <div className="userdetails">
                 <div className="imgbox">
@@ -74,6 +74,7 @@ const Review = () => {
                     alt=""
                   />
                 </div>
+
                 <div className="detbox">
                   <p className="name dark">Kira Whittle</p>
                 </div>
@@ -97,7 +98,8 @@ const Review = () => {
                 </p>
               </div>
             </div>
-
+          </Slide>
+          <Slide left delay={800}>
             <div className="div4 eachdiv">
               <div className="userdetails">
                 <div className="imgbox">
@@ -120,39 +122,36 @@ const Review = () => {
                 </p>
               </div>
             </div>
-
-            <div className="div5 eachdiv">
-              <div className="userdetails">
-                <div className="imgbox">
-                  <img
-                    src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="detbox">
-                  <p className="name">Patrick Abrams</p>
-                </div>
+          </Slide>
+          <div className="div5 eachdiv">
+            <div className="userdetails">
+              <div className="imgbox">
+                <img
+                  src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                  alt=""
+                />
               </div>
-              <div className="review">
-                <h4>
-                  Incredible Support from Fellow Travelers at IndiaXplorer
-                </h4>
-                <p>
-                  “ I cant express enough gratitude for the amazing support I
-                  received from the IndiaXplorer team during my unforgettable
-                  trip to Jaipur. The teaching assistants, who had embarked on
-                  similar journeys themselves, provided awesome guidance and
-                  shared their invaluable experiences. What sets IndiaXplorer
-                  apart is the genuine concern and dedication of their staff.
-                  They truly care about your progress, and its incredibly
-                  refreshing. This program not only boosted my confidence but
-                  also equipped me to navigate the world as a capable traveler
-                  in Jaipur.”
-                </p>
+              <div className="detbox">
+                <p className="name">Patrick Abrams</p>
               </div>
             </div>
+
+            <div className="review">
+              <h4>Incredible Support from Fellow Travelers at IndiaXplorer</h4>
+              <p>
+                “ I cant express enough gratitude for the amazing support I
+                received from the IndiaXplorer team during my unforgettable trip
+                to Jaipur. The teaching assistants, who had embarked on similar
+                journeys themselves, provided awesome guidance and shared their
+                invaluable experiences. What sets IndiaXplorer apart is the
+                genuine concern and dedication of their staff. They truly care
+                about your progress, and its incredibly refreshing. This program
+                not only boosted my confidence but also equipped me to navigate
+                the world as a capable traveler in Jaipur.”
+              </p>
+            </div>
           </div>
-        </RubberBand>
+        </div>
       </div>
     </div>
   );

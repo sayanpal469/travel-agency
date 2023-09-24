@@ -76,7 +76,17 @@ const TourPlaces = () => {
   };
 
   return (
-    <div className="bg-white" id="tour">
+    <div
+      className="bg-white"
+      id="tour"
+      style={{
+        backgroundImage:
+          "url(https://backpacktraveler.qodeinteractive.com/wp-content/uploads/2018/08/h4-slider-img-1.png)",
+        backgroundPosition: "center",
+        backgroundSize: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="mx-auto max-w-2xl px-8 sm:py-24 lg:max-w-7xl lg:px-4">
         <h1 className="text-5xl tracking-tight  text-gray-600 text-center my-14">
           Upcoming Tour
@@ -96,7 +106,7 @@ const TourPlaces = () => {
               {places.map((place) => (
                 <SwiperSlide
                   key={place.id}
-                  className="flex flex-col  bg-gray-100 rounded-md pb-8"
+                  className="flex flex-col  bg-gray-100 rounded-md pb-8 cursor-pointer"
                 >
                   <div className=" w-[100%] h-80">
                     <img src={place.imageSrc} alt={place.imageAlt} />

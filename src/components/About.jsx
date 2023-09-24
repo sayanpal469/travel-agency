@@ -7,7 +7,7 @@ const About = () => {
       <section className="text-gray-600 body-font max-w-7xl mx-auto" id="about">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:gap-24 gap-10">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Fade left cascade>
+            <Fade left cascade delay={500}>
               <div className="gallery">
                 <img
                   src="https://picsum.photos/id/815/400/400"
@@ -26,7 +26,7 @@ const About = () => {
             </Fade>
           </div>
 
-          <Fade right cascade>
+          <Fade right cascade delay={900}>
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-2">
               <h3 className="title-font text-sm tracking-widest font-semibold text-gray-400">
                 ABOUT US
