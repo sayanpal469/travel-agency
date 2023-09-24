@@ -20,7 +20,12 @@ const Home = () => {
       <Review />
       <Contact />
       <Footer />
-        <ScrollToTop smooth color="black" className="pl-1"/>
+      <ScrollToTop
+        smooth
+        color="black"
+        className="pl-2"
+        style={{ width: "48px", height: "48px", backgroundColor: "#e1c1e3" }}
+      />
     </div>
   );
 };

@@ -11,10 +11,6 @@ const Contact = () => {
               width="100%"
               height="100%"
               className="absolute inset-0"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-              scrolling="no"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
 
@@ -38,9 +34,7 @@ const Contact = () => {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed">
-                9088844432
-                </p>
+                <p className="leading-relaxed">9088844432</p>
               </div>
             </div>
           </div>
@@ -90,7 +84,7 @@ const Contact = () => {
                   className="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
-              <button className="text-white bg-gradient-to-r from-[#FF69B4] via-[#df93a4] to-[#51e156b0] text-white font-semibold border-0 py-2 px-6 focus:outline-none 0 rounded text-lg">
+              <button className="text-black bg-gradient-to-r from-[#FF69B4] via-[#df93a4] to-[#51e156b0] border-0 py-2 px-6 focus:outline-none 0 rounded text-lg">
                 Submit
               </button>
             </Fade>
