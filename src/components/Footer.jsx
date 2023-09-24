@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { BsWhatsapp } from "react-icons/bs";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -13,9 +14,9 @@ const Footer = () => {
           />
         </div>
 
-        <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8 bg-slate-100">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div>
+            <div className="ml-0 lg:ml-8">
               <p>
                 <span className="text-xs uppercase tracking-wide text-gray-500">
                   Call us
@@ -108,7 +109,14 @@ const Footer = () => {
                       href="#gallery"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Gallery
+                      <ScrollLink
+                        to={"gallery"} // Remove the '#' symbol
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Set the scroll duration in milliseconds
+                        
+                      >
+                        Gallery
+                      </ScrollLink>
                     </a>
                   </li>
 
@@ -117,7 +125,14 @@ const Footer = () => {
                       href="#tour"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Tours
+                      <ScrollLink
+                        to={"tour"} // Remove the '#' symbol
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Set the scroll duration in milliseconds
+                        
+                      >
+                        Tours
+                      </ScrollLink>
                     </a>
                   </li>
 
@@ -126,7 +141,14 @@ const Footer = () => {
                       href="#review"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Review
+                      <ScrollLink
+                        to={"review"} // Remove the '#' symbol
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Set the scroll duration in milliseconds
+                        
+                      >
+                        Review
+                      </ScrollLink>
                     </a>
                   </li>
                 </ul>
@@ -141,7 +163,14 @@ const Footer = () => {
                       href="#about"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      About
+                      <ScrollLink
+                        to={"about"} // Remove the '#' symbol
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Set the scroll duration in milliseconds
+                        
+                      >
+                        About
+                      </ScrollLink>
                     </a>
                   </li>
                 </ul>
@@ -149,7 +178,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-12">
+          <div className="mt-12 border-t border-gray-300 pt-12">
             <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex justify-start items-center">
                 <img className="h-8 mr-2 lg:h-11 " src={logo} alt="" />

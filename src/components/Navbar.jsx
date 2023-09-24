@@ -2,10 +2,12 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
+import { Link as ScrollLink } from "react-scroll";
 
 const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Gallery", href: "#gallery", current: false },
+  { name: "Why Us", href: "#whyUs", current: false },
   { name: "Tours", href: "#tour", current: false },
   { name: "Review", href: "#review", current: false },
   { name: "Contact Us", href: "#contact", current: true },
@@ -89,20 +91,22 @@ const Navbar = () => {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <ScrollLink
                         key={item.name}
-                        href={item.href}
-                        className={classNames(
+                        to={item.href.substring(1)} // Remove the '#' symbol
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Set the scroll duration in milliseconds
+                        className={
                           item.current
-                            ? "bg-[#E64569] text-white px-3 py-2 rounded-md"
+                            ? "bg-gradient-to-r from-[#FF69B4] via-[#df93a4] to-[#79df7cb0] text-white font-semibold px-3 py-2 rounded-md cursor-pointer"
                             : `${
                                 scrolled ? "text-black" : "text-white"
-                              } px-3 py-3 text-sm font-medium`
-                        )}
+                              } px-3 py-2 text-sm font-medium cursor-pointer`
+                        }
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </ScrollLink>
                     ))}
                   </div>
                 </div>
