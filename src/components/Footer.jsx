@@ -186,7 +186,7 @@ const Footer = () => {
                 &copy; 2023. IndiaXplorers. All rights reserved.
               </p>
               <p className="mt-8 text-xs mr-20 text-black sm:mt-0">
-                Thia site is designed & developed by Subho ( 8777468277 )
+                This site is designed & developed by Subho ( 8777468277 )
               </p>
             </div>
           </div>
