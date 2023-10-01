@@ -1,5 +1,25 @@
 import "../styles/Destination.css";
 import Zoom from "react-reveal/Zoom";
+import meghalaya from "../assets/explore/Dawki- Meghalaya.jpg"
+import digha from "../assets/explore/Digha.jpg"
+import gantok from "../assets/explore/Gangtok.jpg"
+import kedarnath from "../assets/explore/kedernath.jpg"
+import ladakh from "../assets/explore/ladakh.jpg"
+import masoorie from "../assets/explore/Masoorie.jpg"
+import puri from "../assets/explore/puri.jpg"
+import Dooars from "../assets/explore/Dooars.jpg"
+import haridwar from "../assets/explore/haridwar.jpg"
+import Lamahata from "../assets/explore/Lamahata.jpg"
+import Mousuni from "../assets/explore/Mousuni dip.jpg"
+import NorthSikkim from "../assets/explore/North Sikkim.jpg"
+import TajMahal from "../assets/explore/Taj Mahal.jpg"
+import Rishikesh from "../assets/explore/Rishikesh.jpg"
+import SilkRoute from "../assets/explore/Silk Route.jpg"
+import Tawng from "../assets/explore/Tawng-Arunachal Pradesh.jpg"
+// import Tinchunley from "../assets/explore/Tinchunley.jpg"
+
+
+
 const Destinations = () => {
   return (
     <div id="gallery">
@@ -16,38 +36,38 @@ const Destinations = () => {
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg"
-                        alt="Kyoto"
+                        src={meghalaya}
+                        alt="Meghalaya"
                       />
                     </div>
-                    <div className="photo__name">Kyoto</div>
+                    <div className="photo__name">Meghalaya</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg"
-                        alt="Hallstatt"
+                        src={digha}
+                        alt="Digha"
                       />
                     </div>
-                    <div className="photo__name">Hallstatt</div>
+                    <div className="photo__name">Digha</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg"
-                        alt="Peru"
+                        src={gantok}
+                        alt="Gantok"
                       />
                     </div>
-                    <div className="photo__name">Peru</div>
+                    <div className="photo__name">Gantok</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg"
-                        alt="Rio"
+                        src={kedarnath}
+                        alt="Kedarnath"
                       />
                     </div>
-                    <div className="photo__name">Rio</div>
+                    <div className="photo__name">Kedarnath</div>
                   </div>
                 </div>
               </div>
@@ -56,38 +76,38 @@ const Destinations = () => {
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg"
-                        alt="Italy"
+                        src={ladakh}
+                        alt="Ladakh"
                       />
                     </div>
-                    <div className="photo__name">Italy</div>
+                    <div className="photo__name">Ladakh</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg"
-                        alt="Osaka"
+                        src={masoorie}
+                        alt="Masoorie"
                       />
                     </div>
-                    <div className="photo__name">Osaka</div>
+                    <div className="photo__name">Masoorie</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg"
-                        alt="Bali"
+                        src={puri}
+                        alt="Puri"
                       />
                     </div>
-                    <div className="photo__name">Bali</div>
+                    <div className="photo__name">Puri</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg"
-                        alt="Paris"
+                        src={Dooars}
+                        alt="Dooars"
                       />
                     </div>
-                    <div className="photo__name">Paris</div>
+                    <div className="photo__name">Dooars</div>
                   </div>
                 </div>
               </div>
@@ -96,38 +116,38 @@ const Destinations = () => {
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg"
-                        alt="Cusco"
+                        src={haridwar}
+                        alt="Haridwar"
                       />
                     </div>
-                    <div className="photo__name">Cusco</div>
+                    <div className="photo__name">Haridwar</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg"
-                        alt="Rome"
+                        src={Rishikesh}
+                        alt="Rishikesh"
                       />
                     </div>
-                    <div className="photo__name">Rome</div>
+                    <div className="photo__name">Rishikesh</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg"
-                        alt="Paris"
+                        src={SilkRoute}
+                        alt="SilkRoute"
                       />
                     </div>
-                    <div className="photo__name">Paris</div>
+                    <div className="photo__name">Silk Route</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg"
-                        alt="Bali"
+                        src={Tawng}
+                        alt="Tawng"
                       />
                     </div>
-                    <div className="photo__name">Bali</div>
+                    <div className="photo__name">Tawng-Arunachal Pradesh</div>
                   </div>
                 </div>
               </div>
@@ -136,38 +156,38 @@ const Destinations = () => {
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg"
-                        alt="Milan"
+                        src={Lamahata}
+                        alt="Lamahata"
                       />
                     </div>
-                    <div className="photo__name">Milan</div>
+                    <div className="photo__name">Lamahata</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg"
-                        alt="Budapest"
+                        src={Mousuni}
+                        alt="Mousuni"
                       />
                     </div>
-                    <div className="photo__name">Budapest</div>
+                    <div className="photo__name">Mousuni</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg"
-                        alt="Vienna"
+                        src={NorthSikkim}
+                        alt="NorthSikkim"
                       />
                     </div>
-                    <div className="photo__name">Vienna</div>
+                    <div className="photo__name">North Sikkim</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
                       <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg"
-                        alt="Mexico"
+                        src={TajMahal}
+                        alt="TajMahal"
                       />
                     </div>
-                    <div className="photo__name">Mexico</div>
+                    <div className="photo__name">Taj Mahal</div>
                   </div>
                 </div>
               </div>

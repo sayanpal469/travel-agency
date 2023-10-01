@@ -1,4 +1,4 @@
-import headerVideo from "../assets/video (720p).mp4";
+import headerVideo from "../assets/explore/header.mp4";
 import { Link as ScrollLink } from "react-scroll";
 import Fade from "react-reveal/Fade";
 const Header = () => {
