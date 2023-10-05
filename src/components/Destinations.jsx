@@ -1,24 +1,25 @@
 import "../styles/Destination.css";
 import Zoom from "react-reveal/Zoom";
-import meghalaya from "../assets/explore/Dawki- Meghalaya.jpg"
-import digha from "../assets/explore/Digha.jpg"
-import gantok from "../assets/explore/Gangtok.jpg"
-import kedarnath from "../assets/explore/kedernath.jpg"
-import ladakh from "../assets/explore/ladakh.jpg"
-import masoorie from "../assets/explore/Masoorie.jpg"
-import puri from "../assets/explore/puri.jpg"
-import Dooars from "../assets/explore/Dooars.jpg"
-import haridwar from "../assets/explore/haridwar.jpg"
-import Lamahata from "../assets/explore/Lamahata.jpg"
-import Mousuni from "../assets/explore/Mousuni dip.jpg"
-import NorthSikkim from "../assets/explore/North Sikkim.jpg"
-import TajMahal from "../assets/explore/Taj Mahal.jpg"
-import Rishikesh from "../assets/explore/Rishikesh.jpg"
-import SilkRoute from "../assets/explore/Silk Route.jpg"
-import Tawng from "../assets/explore/Tawng-Arunachal Pradesh.jpg"
+import meghalaya from "../assets/explore/Dawki- Meghalaya.jpg";
+import digha from "../assets/explore/Digha.jpg";
+
+import kedarnath from "../assets/explore/kedernath.jpg";
+import ladakh from "../assets/explore/ladakh.jpg";
+
+import puri from "../assets/explore/puri.jpg";
+import Dooars from "../assets/explore/Dooars.jpg";
+import haridwar from "../assets/explore/haridwar.jpg";
+
+import Mousuni from "../assets/explore/Mousuni dip.jpg";
+import NorthSikkim from "../assets/explore/North Sikkim.jpg";
+
+import Kashmir from "../assets/explore/Kashmir.jpg";
+import Manali from "../assets/explore/Manali.jpg";
+import Spiti from "../assets/explore/Spiti.jpg";
+import Sundarban from "../assets/explore/Sundarban.jpg";
+import SilkRoute from "../assets/explore/Silk Route.jpg";
+import Tawng from "../assets/explore/Tawng-Arunachal Pradesh.jpg";
 // import Tinchunley from "../assets/explore/Tinchunley.jpg"
-
-
 
 const Destinations = () => {
   return (
@@ -35,39 +36,27 @@ const Destinations = () => {
                 <div className="gallery__strip one">
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={meghalaya}
-                        alt="Meghalaya"
-                      />
+                      <img src={Kashmir} alt="Kashmir" />
                     </div>
-                    <div className="photo__name">Meghalaya</div>
+                    <div className="photo__name">Kashmir</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={digha}
-                        alt="Digha"
-                      />
+                      <img src={ladakh} alt="Ladakh" />
                     </div>
-                    <div className="photo__name">Digha</div>
+                    <div className="photo__name">Ladakh</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={gantok}
-                        alt="Gantok"
-                      />
+                      <img src={Manali} alt="Manali" />
                     </div>
-                    <div className="photo__name">Gantok</div>
+                    <div className="photo__name">Manali</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={kedarnath}
-                        alt="Kedarnath"
-                      />
+                      <img src={Manali} alt="Shimla" />
                     </div>
-                    <div className="photo__name">Kedarnath</div>
+                    <div className="photo__name">ShimlaW</div>
                   </div>
                 </div>
               </div>
@@ -75,39 +64,27 @@ const Destinations = () => {
                 <div className="gallery__strip two">
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={ladakh}
-                        alt="Ladakh"
-                      />
+                      <img src={Spiti} alt="Spiti" />
                     </div>
-                    <div className="photo__name">Ladakh</div>
+                    <div className="photo__name">Spiti</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={masoorie}
-                        alt="Masoorie"
-                      />
+                      <img src={kedarnath} alt="Kedarnath" />
                     </div>
-                    <div className="photo__name">Masoorie</div>
+                    <div className="photo__name">Kedarnath</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={puri}
-                        alt="Puri"
-                      />
+                      <img src={NorthSikkim} alt="NorthSikkim" />
                     </div>
-                    <div className="photo__name">Puri</div>
+                    <div className="photo__name">Sikkim</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={Dooars}
-                        alt="Dooars"
-                      />
+                      <img src={SilkRoute} alt="SilkRoute" />
                     </div>
-                    <div className="photo__name">Dooars</div>
+                    <div className="photo__name">Silk Route</div>
                   </div>
                 </div>
               </div>
@@ -115,39 +92,27 @@ const Destinations = () => {
                 <div className="gallery__strip three">
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={haridwar}
-                        alt="Haridwar"
-                      />
+                      <img src={haridwar} alt="Haridwar" />
                     </div>
-                    <div className="photo__name">Haridwar</div>
+                    <div className="photo__name">DarjeelingW</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={Rishikesh}
-                        alt="Rishikesh"
-                      />
+                      <img src={Dooars} alt="Dooars" />
                     </div>
-                    <div className="photo__name">Rishikesh</div>
+                    <div className="photo__name">Dooars</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={SilkRoute}
-                        alt="SilkRoute"
-                      />
+                      <img src={Tawng} alt="Tawng" />
                     </div>
-                    <div className="photo__name">Silk Route</div>
+                    <div className="photo__name">Arunachal</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={Tawng}
-                        alt="Tawng"
-                      />
+                      <img src={meghalaya} alt="Meghalaya" />
                     </div>
-                    <div className="photo__name">Tawng-Arunachal Pradesh</div>
+                    <div className="photo__name">Meghalaya</div>
                   </div>
                 </div>
               </div>
@@ -155,39 +120,27 @@ const Destinations = () => {
                 <div className="gallery__strip four">
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={Lamahata}
-                        alt="Lamahata"
-                      />
+                      <img src={puri} alt="Puri" />
                     </div>
-                    <div className="photo__name">Lamahata</div>
+                    <div className="photo__name">Puri</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={Mousuni}
-                        alt="Mousuni"
-                      />
+                      <img src={digha} alt="Digha" />
                     </div>
-                    <div className="photo__name">Mousuni</div>
+                    <div className="photo__name">Digha</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={NorthSikkim}
-                        alt="NorthSikkim"
-                      />
+                      <img src={Mousuni} alt="Mandarmani" />
                     </div>
-                    <div className="photo__name">North Sikkim</div>
+                    <div className="photo__name">Mandarmani</div>
                   </div>
                   <div className="photo">
                     <div className="photo__image">
-                      <img
-                        src={TajMahal}
-                        alt="TajMahal"
-                      />
+                      <img src={Sundarban} alt="Sundarban" />
                     </div>
-                    <div className="photo__name">Taj Mahal</div>
+                    <div className="photo__name">Sundarban</div>
                   </div>
                 </div>
               </div>

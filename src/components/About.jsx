@@ -10,16 +10,19 @@ const About = () => {
             <Fade left cascade delay={500}>
               <div className="gallery">
                 <img
-                  src="https://picsum.photos/id/815/400/400"
+                  src="https://images.pexels.com/photos/1024975/pexels-photo-1024975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Two hands creating a heart and showing the sun"
                 />
                 <img
-                  src="https://picsum.photos/id/872/400/400"
+                  src="https://images.pexels.com/photos/103889/pexels-photo-103889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="The mountain"
                 />
-                <img src="https://picsum.photos/id/603/400/400" alt="a river" />
                 <img
-                  src="https://picsum.photos/id/823/400/400"
+                  src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  alt="a river"
+                />
+                <img
+                  src="https://images.pexels.com/photos/2446711/pexels-photo-2446711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="a women with a camera"
                 />
               </div>
